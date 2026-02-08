@@ -1,24 +1,29 @@
-📊 Sales & Shipment Analytics Dashboard – Power BI
-
+📊 Sales & Shipment Analytics Dashboard using Power BI
 📌 Project Overview
 
-This project presents an interactive Sales & Shipment Analytics Dashboard developed using Power BI.
-It transforms raw shipment data into meaningful insights that help monitor revenue, volume, profitability, regional demand, and salesperson performance.
+This project focuses on analyzing shipment and sales operations to uncover revenue patterns, product performance, and regional trends.
 
-🎯 Business Objective
+The dashboard was built using Power BI, applying data modeling, DAX calculations, and interactive visuals to support faster and smarter business decisions.
 
-Provide a quick executive KPI view
+🎯 Objectives
 
-Compare current results with previous year
+Monitor overall sales and shipment KPIs
 
-Identify top revenue-generating products
+Compare current results vs last year
 
-Understand geo contribution
+Identify top-performing products
 
-Track individual salesperson effectiveness
+Analyze geo contribution
 
-📦 Data Model
-Fact Table – Shipments
+Track salesperson effectiveness
+
+Understand shipment volume distribution
+
+🗂 Dataset Architecture
+
+The model follows a fact & dimension approach similar to enterprise BI systems.
+
+🚚 Shipments (Fact)
 
 ShipmentID
 
@@ -36,9 +41,7 @@ Boxes
 
 Order_Status
 
-Dimension Tables
-
-Products
+📦 Products
 
 Product
 
@@ -48,7 +51,7 @@ Cost_per_box
 
 PID
 
-Geography
+🌍 Geography
 
 Geo
 
@@ -56,7 +59,7 @@ Region
 
 GID
 
-Salesperson
+👨‍💼 Salesperson
 
 Sales_person
 
@@ -66,7 +69,7 @@ Picture
 
 SPID
 
-Calendar
+📅 Calendar
 
 cal_date
 
@@ -80,27 +83,33 @@ weekday_num
 
 weekday_name
 
-🧹 Data Preparation
+🧹 Data Preparation & Transformation
 
-Verified keys between fact & dimension tables
+Performed using Power Query.
 
-Adjusted data types
+Validated foreign keys
 
-Prepared date structure for time analysis
+Standardized data types
 
-Organized reporting model
+Enabled time intelligence
 
-🧠 Additional Columns Created
+Structured tables for analytical performance
 
-Start of Month for trend reporting
+🧠 Feature Engineering (Columns Added)
 
-First Name for easy identification
+To enhance reporting:
 
-Cost calculated from boxes and cost per box
+Start of Month → monthly grouping
 
-Boxes (bins) for shipment distribution analysis
+First Name → cleaner display in leaderboard
 
-📐 DAX Measures
+Cost → boxes × cost per box
+
+Boxes (bins) → shipment size segmentation
+
+📐 DAX Measures & Calculations
+
+Core metrics built for analytics:
 
 Total Amount
 
@@ -126,36 +135,42 @@ Total Boxes (12 Months Variance)
 
 Total % contribution
 
-📊 KPIs Displayed
+📊 Executive KPIs
 
-Total Amount
+The dashboard highlights:
 
-Total Boxes
+✅ Total Amount
+✅ Total Boxes
+✅ Shipment Count
+✅ Total Profit
+✅ Profit Pct
 
-Shipment Count
+📈 Visual Analytics
+📅 Trend Comparison
 
-Total Profit
+Line charts help compare:
 
-Profit Pct
+Current performance
 
-📈 Report Highlights
-Year vs Last 12 Months
+Last year
 
-Line charts comparing sales and volume trends to quickly identify increases or drops.
+Variance across months
 
-Geo Analysis
+Quickly reveals growth or decline.
 
-Donut chart visualizing how each region contributes to total revenue.
+🌍 Regional Revenue View
 
-Shipment Size Distribution
+Donut chart representing contribution by geography.
 
-Clustered column chart to understand frequency of small vs large orders.
+📦 Shipment Pattern
 
-Salesperson Leaderboard
+Clustered columns using bins to show how frequently each shipment size occurs.
 
-Interactive ranking with:
+👨‍💼 Sales Leaderboard
 
-Photo
+Dynamic ranking with:
+
+Image
 
 First Name
 
@@ -163,27 +178,29 @@ Total Amount
 
 Total Boxes
 
-Contribution %
+Revenue %
 
-Product Performance
+Changes based on slicer selections.
 
-Revenue table
+🏆 Product Contribution
 
-Treemap of top products
+Ranked table
 
-🔍 Insights Enabled
+Treemap for top performers
 
-Easy comparison of present vs past performance
+🔍 Insights Generated
 
-Visibility of revenue concentration among key products
+Easy visibility into YoY changes
 
-Clear view of regional strengths
+Revenue dependency on certain products
 
-Performance evaluation of sales team
+Clear regional demand patterns
 
-Understanding shipment behavior patterns
+Sales performance shifts based on filters
 
-🛠 Tools Used
+Majority shipments belong to specific size ranges
+
+🛠 Technology Stack
 
 Power BI Desktop
 
@@ -193,21 +210,21 @@ DAX
 
 Excel
 
-💼 Business Benefits
+💼 Business Impact
 
-Faster management reporting
+This solution enables:
 
-Better planning & forecasting
+✔ Faster decision-making
+✔ Consistent KPI measurement
+✔ Identification of revenue drivers
+✔ Better target & incentive planning
+✔ Reduced manual reporting effort
 
-Consistent KPI definitions
+📂 Repository Includes
 
-Reduced manual analysis effort
+Power BI report (.pbix)
 
-📂 Files Included
-
-.pbix report
-
-Excel dataset
+Source dataset
 
 Dashboard screenshots
 
