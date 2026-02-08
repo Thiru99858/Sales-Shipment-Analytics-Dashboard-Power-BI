@@ -5,6 +5,9 @@ This project focuses on analyzing shipment and sales operations to uncover reven
 
 The dashboard was built using Power BI, applying data modeling, DAX calculations, and interactive visuals to support faster and smarter business decisions.
 
+## 📷 Dashboard Preview
+![Dashboard Preview](Screenshot.png)
+
 ## 🎯 Objectives
 - Monitor overall sales and shipment KPIs  
 - Compare current results vs last year  
