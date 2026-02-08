@@ -127,7 +127,10 @@ Ranked table and treemap highlight top-performing products.
 ## 📂 Repository Includes
 - Power BI report (.pbix)  
 - Source dataset  
-- Dashboard screenshots  
+- Dashboard screenshots
+
+## 📥 Download Report
+You can download the PBIX file from this repository to explore the data model, relationships, and DAX measures.
 
 ## 👨‍💻 Author
 Thirupal  
